@@ -23,15 +23,22 @@ p {
   margin: 33px;
 }
 
+
+a:link {
+text-decoration:underline;
+/*background-color :#ccccff;*/ /*未訪問時のリンク、背景色*/
+color:#666;
+}
 a:visited {
-  color: #666;
+text-decoration:underline;
+color:#666;
 }
-
-a {
-  color: #000;
+a:active {
+text-decoration:underline;
+color:#333333;
 }
-
-a:-webkit-any-link {
-  cursor: pointer;
-  text-decoration: underline;
+a:hover { /*マウスを乗せた時*/
+text-decoration:underline;
+background-color :#000;
+color:#fff;
 }
