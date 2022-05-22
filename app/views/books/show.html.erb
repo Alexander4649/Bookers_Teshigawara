@@ -8,9 +8,11 @@
     <title>Bookers</title>
   </head>
   <body>
-    <p><font color="#008000">Book was successfully created.</font></p>
+    <%# <p><font color="#008000">Book was successfully created.</font></p> #%>
     <p><strong>Title: </strong><%= @book.title %></p> 
     <p><strong>Body: </strong><%= @book.body %></p>
+    
+    <div><a href="/Edit">Edit</a><span> | </span><a href="/books">Back</a></div>
     
   </body>
 </html>

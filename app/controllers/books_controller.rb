@@ -16,6 +16,7 @@ class BooksController < ApplicationController
   
   def show
     @book = Book.find(params[:id])
+    # if文が入る　⇨Book was successfully created.を出すか出さないか
   end
   
   

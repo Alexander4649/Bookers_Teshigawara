@@ -1,0 +1,23 @@
+
+div {
+text-align: left;
+}
+
+a:link {
+text-decoration:underline;
+/*background-color :#ccccff;*/ /*未訪問時のリンク、背景色*/
+color:#666;
+}
+a:visited {
+text-decoration:underline;
+color:#666;
+}
+a:active {
+text-decoration:underline;
+color:#333333;
+}
+a:hover { /*マウスを乗せた時*/
+text-decoration:underline;
+background-color :#000;
+color:#fff;
+}
