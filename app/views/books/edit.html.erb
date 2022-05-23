@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c97181b25.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="show.css" />
+    <title>Bookers</title>
+  </head>
+  <body>
+  <h1>Editing Book</h1>
+   <%= form_with model:@book,url:update_book_path(@book.id),methood: :patch do |f| %>
+    
+    <p2>Title</p2><br>
+    
+     <%= f.text_field :title %>
+      <div class = "body-form">
+        <p2>Body</p2><br>
+        <%= f.text_area :body %><br>
+      </div>
+      
+      <div class = "submit-box">
+        <%= f.submit 'Update Book' %>
+      </div>
+    <div class = "Show-Back">
+      <%= link_to"Show",book_path(@book.id) %>
+      <span>|</span>
+      <a href= "/books">Back</a>
+    </div>
+    <% end %>
+
+  </body>
+</html>

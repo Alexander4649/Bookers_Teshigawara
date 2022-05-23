@@ -21,6 +21,15 @@ class BooksController < ApplicationController
     # if文が入る　⇨Book was successfully created.を出すか出さないかで
   end
   
+  def edit
+    @book = Book.find(params[:id])
+  end
+  
+  def update
+    book = Book.find(params[:id])
+    book.update(book_params)
+    redirect_to book_path(book.id)
+  end
   
   
   private
