@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://kit.fontawesome.com/3c97181b25.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="new.css" />
+    <link rel="stylesheet" href="application.css" />
     <title>Bookers</title>
   </head>
   <body>
     <h1>Books</h1>
     
-    <div class = "index-area">
+    <%<div class = "index-area">
       <div class = "index-head">
        <a1><strong>Title</strong></a1>
        <a1><strong>Body</strong></a1>
@@ -20,10 +20,16 @@
     
     <div class = "index-body">
      <% @books.each do |book| %>
-     <a1><%= book.title %></a1>
-     <a1><%= book.body %></a1>
+     <span1><%= book.title %><span1>
+     <strong><%= book.body %></strong>
+     <%#= link_to"Show",book_path(@book.id) %>
+     <%#= link_to"Edit",edit_book_path(@book.id) %>
+     <%= link_to "Destroy",@book, "data-confirm"=>"Are you sure?"%>
      <% end %>
     </div>
+    
+   
+     
 
     <h2>New book</h2>
      <%= form_with model: @book do |f| %>

@@ -4,7 +4,7 @@ class BooksController < ApplicationController
     #@host = request.host
   end
   
-  def new
+  def index
     @book = Book.new
     @books = Book.all
   end
@@ -29,6 +29,14 @@ class BooksController < ApplicationController
     book = Book.find(params[:id])
     book.update(book_params)
     redirect_to book_path(book.id)
+  end
+  
+  def destroy
+    book = Book.find(params[:id])
+    book.destroy
+    redirect_to '/books'
+    
+  
   end
   
   
