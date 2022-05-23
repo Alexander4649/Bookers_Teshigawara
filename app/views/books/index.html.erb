@@ -27,6 +27,15 @@
     </table>
     
     <h2>New book</h2>
+    <% if @book.errors.any? %>
+     <%= @list.errors.count %>can't be blank
+     <ul>
+       <% @book.errors.full_message.each do |message| %>
+       <li><%= message %></li>
+       <% end %>
+     </ul>
+     <% end %>
+     
      <%= form_with model: @book do |f| %>
     
     <p2>Title</p2><br>
