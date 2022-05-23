@@ -11,12 +11,16 @@ class BooksController < ApplicationController
     
     book = Book.new(book_params)
     book.save
-    redirect_to '/books/:id'
+    redirect_to '/books'
+  end
+  
+  def index
+    @books = Book.all
   end
   
   def show
     @book = Book.find(params[:id])
-    # if文が入る　⇨Book was successfully created.を出すか出さないか
+    # if文が入る　⇨Book was successfully created.を出すか出さないかで
   end
   
   
