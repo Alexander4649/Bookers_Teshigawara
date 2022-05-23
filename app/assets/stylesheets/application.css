@@ -43,16 +43,18 @@ background-color :#000;
 color:#fff;
 }
 
-.index-head{
-  display: table-row;
-  vertical-align: inherit;
-  border-color: inherit;
+table {
+  border-collapse: separate;
+  text-indent: initial;
+  border-spacing: 2px;
 }
 
-.index-body {
-  display: table-row;
+th {
+  padding-bottom: 5px;
+  display: table-cell;
   vertical-align: inherit;
-  border-color: inherit;
+  font-weight: bold;
+  text-align: -internal-center;
 }
 
 
