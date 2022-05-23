@@ -10,17 +10,29 @@
   <body>
     <h1>Books</h1>
     
-    <h4>Title</h4><h4>Body</h4>
+    <div class = "index-area">
+      <div class = "index-head">
+       <a1><strong>Title</strong></a1>
+       <a1><strong>Body</strong></a1>
+      </div>
+
+    </div>
+    
+    <div class = "index-body">
+     <% @books.each do |book| %>
+     <a1><%= book.title %></a1>
+     <a1><%= book.body %></a1>
+     <% end %>
+    </div>
 
     <h2>New book</h2>
-    
      <%= form_with model: @book do |f| %>
     
-    <p1>Title</p1><br>
+    <p2>Title</p2><br>
      <%= f.text_field :title %>
      
      <div class = "body-form">
-    <p1>Body</p1><br>
+    <p2>Body</p2><br>
      <%= f.text_area :body %><br>
      </div>
      
