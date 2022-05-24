@@ -23,30 +23,32 @@ p {
   margin: 33px;
 }
 
-
-a:link {
+a:link { /*未訪問のリンク*/
 text-decoration:underline;
-/*background-color :#ccccff;*/ /*未訪問時のリンク、背景色*/
+/*background-color :#ccccff;/*未訪問時のリンク、背景色*/
+color:#000;
+}
+a:visited { /*訪問済みのリンク*/
+text-decoration:underline;
 color:#666;
 }
-a:visited {
-text-decoration:underline;
-color:#666;
-}
-a:active {
+a:active { /*ポイント時のリンク*/
 text-decoration:underline;
 color:#333333;
 }
-a:hover { /*マウスを乗せた時*/
+a:hover { /*マウスを乗せた時,選択中のリンク*/
 text-decoration:underline;
 background-color :#000;
 color:#fff;
 }
 
 table {
-  border-collapse: separate;
+  display: table;
   text-indent: initial;
   border-spacing: 2px;
+  border-collapse: separate;
+  box-sizing: border-box;
+  border-color: grey;
 }
 
 th {
@@ -57,6 +59,18 @@ th {
   text-align: -internal-center;
 }
 
+
+tr {
+  display: table-row;
+  vertical-align: inherit;
+  border-color: inherit;
+}
+
+td {
+  padding-bottom: 7px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
 
 .body-form {
   margin-top: 10px;
