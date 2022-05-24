@@ -26,7 +26,7 @@ p {
 a:link { /*未訪問のリンク*/
 text-decoration:underline;
 /*background-color :#ccccff;/*未訪問時のリンク、背景色*/
-color:#000;
+color:#000; /*黒色
 }
 a:visited { /*訪問済みのリンク*/
 text-decoration:underline;
