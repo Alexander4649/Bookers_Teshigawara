@@ -8,7 +8,11 @@
     <title>Bookers</title>
   </head>
   <body>
-    <%= flash[:notice] %>
+    <% flash.each do |key, value| %>
+    <p class="notice notice-<%= key %>">
+    <%= value %>
+    </p>
+    <% end %>
     <p><strong>Title: </strong><%= @book.title %></p> 
     <p><strong>Body: </strong><%= @book.body %></p>
     
