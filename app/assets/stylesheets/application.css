@@ -76,8 +76,44 @@ td {
   padding-right: 5px;
 }
 
+.error_explanation  {
+  width: 450px;
+  height: 123px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+h4 {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: #c00;
+  color: #fff;
+  /*margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px; */
+  }
+
+ul li {
+  font-size: 12px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 0px;
+  margin: 33px;
+}
+
+
 .body-form {
   margin-top: 10px;
+  /*padding: 2px;
+  background-color: red;
+  display: table; */
 }
 
 .submit-box {

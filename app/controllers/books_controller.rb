@@ -18,9 +18,12 @@ class BooksController < ApplicationController
     flash[:notice] = "Book was successfully created."
     redirect_to book_path(@book)
     else
-    @book = Book.all.order(created_at: :desc)
-    @book = Book.find_by(params[:id])
-    render :'index'
+    #@book = Book.all.order(created_at: :desc)
+    #@book = Book.find_by(params[:id])
+    @books = Book.all
+    render :index
+    
+    
     end
     #book.create(content:params[:content])
   end
