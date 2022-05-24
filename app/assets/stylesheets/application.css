@@ -39,7 +39,7 @@ color:#333333;
 a:hover { /*マウスを乗せた時,選択中のリンク*/
 text-decoration:underline;
 background-color :#000;
-color:#fff; /*白色*/
+color:#fff; /*白*/
 }
 
 table {
