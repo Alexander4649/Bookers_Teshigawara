@@ -76,9 +76,9 @@ td {
   padding-right: 5px;
 }
 
-.error_explanation  {
+#error_explanation  {
   width: 450px;
-  height: 123px;
+  /*height: 123px;*/
   border: 2px solid red;
   padding: 7px;
   padding-bottom: 0;
@@ -108,12 +108,14 @@ ul li {
   margin: 33px;
 }
 
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
 
 .body-form {
   margin-top: 10px;
-  /*padding: 2px;
-  background-color: red;
-  display: table; */
 }
 
 .submit-box {
