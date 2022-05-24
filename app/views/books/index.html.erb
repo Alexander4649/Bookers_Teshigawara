@@ -21,20 +21,22 @@
         <td><%= book.body %></td>
         <td><a href= "/books/<%= book.id %>">Show</a></td>
         <td><a href= "/books/<%= book.id %>/edit">Edit</a></td>
-        <td><a href= "/books/delete/<%= book.id %>">Destroy</a></td>
+        <td><%= link_to "Destroy", book_path(book), method: :delete, data: { confirm: 'Are you sure？' } %></td>
+        <%#= link_to "Destory", @book, method: :destroy, data: { confirm: "削除しますか？" } %>
+        <!--<td><a href= "/books/delete/<%#= book.id %>">Destroy</a></td>-->
       </tr>
       <% end %>
     </table>
     
     <h2>New book</h2>
     <% if @book.errors.any? %>
-     <%= @list.errors.count %>can't be blank
+     <%= @book.errors.count %>can't be blank
      <ul>
-       <% @book.errors.full_message.each do |message| %>
+       <% @book.errors.full_messages.each do |message| %>
        <li><%= message %></li>
        <% end %>
      </ul>
-     <% end %>
+    <% end %>
      
      <%= form_with model: @book do |f| %>
     

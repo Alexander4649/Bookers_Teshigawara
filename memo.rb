@@ -17,3 +17,8 @@
      <%= link_to "Destroy",@book, "data-confirm"=>"Are you sure?"%>
      <% end %>
     </div>
+    
+    
+    
+    <td><a href= "/books/delete/<%= book.id %>">Destroy</a></td>
+    <td><%= link_to "Destroy", book_path(book), method: :delete, data: { confirm: 'Are you sure？' } %></td>

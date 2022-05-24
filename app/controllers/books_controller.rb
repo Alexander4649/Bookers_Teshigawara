@@ -12,13 +12,13 @@ class BooksController < ApplicationController
   
   def create
     @book = Book.new(book_params)
-    @book.save
-    redirect_to '/books'
-    #if @book.save
+    #@book.save
     #redirect_to '/books'
-    #else
-    #render :new
-    #end
+    if @book.save
+    redirect_to '/books'
+    else
+    render :new
+    end
     #book.create(content:params[:content])
   end
   
