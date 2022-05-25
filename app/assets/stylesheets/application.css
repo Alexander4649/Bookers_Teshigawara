@@ -53,6 +53,7 @@ table {
   border-collapse: separate;
   box-sizing: border-box;
   border-color: grey;
+  
 }
 
 th {
@@ -101,11 +102,17 @@ h4 {
   margin-inline-end: 0px; */
   }
 
-ul li {
+li {
   font-size: 12px;
   font-family: verdana, arial, helvetica, sans-serif;
-  line-height: 0px;
-  margin: 33px;
+  /*line-height: 0px;*/
+  list-style: square;
+  line-height: 18px;
+  display: list-item;
+  /*margin: 11px;*/
+  /*display: flex;*/
+  /*justify-content: center;*/
+  /*align-items: center;*/
 }
 
 .field_with_errors {

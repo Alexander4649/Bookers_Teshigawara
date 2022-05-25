@@ -38,13 +38,13 @@
     <% if @book.errors.any? %>
      <div id="error_explanation">
        <h4><%= @book.errors.count %> errors prohibited this book from being saved:</h4>
-      <ul>
+        <ul>
        <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
      </div>
-   <% end %>
+    <% end %>
    
      <%= form_with model: @book do |f| %>
      
@@ -62,15 +62,10 @@
      
      <% end %>
      
-     <%= form_with model: @book do |f| %>
-      <% if @book.errors.any? %>
+     <%#= form_with model: @book do |f| %>
+      <%# if @book.errors.any? %>
        
-      <% end %>
-     <% end %>
-     
-     
-    
-    
-    
+      <%# end %>
+      <%# end %>
   </body>
 </html>
