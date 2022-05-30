@@ -21,7 +21,7 @@ class BooksController < ApplicationController
     #@book = Book.all.order(created_at: :desc)
     #@book = Book.find_by(params[:id])
     @books = Book.all
-    render :index
+    render "index"
     
     
     end
